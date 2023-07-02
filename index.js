@@ -1,4 +1,4 @@
-const add = require("./add");
+const add = require("./add"); //the add const an be anything
 
 console.log("Hello from index.js");
 const sum = add(1, 2);
