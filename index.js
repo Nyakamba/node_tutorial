@@ -1,4 +1,3 @@
-const superHero = require("./super-hero");
-console.log(superHero.getName());
-superHero.setName("Superman");
-console.log(superHero.getName());
+const add = require("./math");
+
+console.log(add(5, 3));
