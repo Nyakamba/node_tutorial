@@ -1,8 +1,8 @@
-(function () {
+(function (message) {
   const superHero = "Batman";
   console.log(superHero);
-})();
-(function () {
+})("Hello");
+(function (message) {
   const superHero = "Superman";
   console.log(superHero);
-})();
+})("Hey");
