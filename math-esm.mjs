@@ -1,9 +1,9 @@
-const add = (a, b) => {
+export const add = (a, b) => {
   return a + b;
 };
 
-const subtract = (a, b) => {
+export const subtract = (a, b) => {
   return a - b;
 };
 
-export default { add, subtract };
+// export default { add, subtract };
