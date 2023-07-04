@@ -1,1 +1,1 @@
-console.log("Hello Enock omwega");
+const path = require("node:path");
