@@ -1,15 +1,22 @@
-const EventEmitter = require("node:events");
+const PizzaShop = require("./pizza-shop");
 
-const emitter = new EventEmitter();
+const pizzaShop = new PizzaShop();
 
-emitter.on("order-pizza", (size, topping) => {
-  console.log(`Order received! Baking a ${size} pizza with ${topping}`);
-});
+pizzaShop.order();
+pizzaShop.displayOrderNumber();
 
-emitter.on("order-pizza", (size) => {
-  if (size === "large") {
-    console.log("Serving complimentary drink");
-  }
-});
+// const EventEmitter = require("node:events");
 
-emitter.emit("order-pizza", "large", "mushroom");
+// const emitter = new EventEmitter();
+
+// emitter.on("order-pizza", (size, topping) => {
+//   console.log(`Order received! Baking a ${size} pizza with ${topping}`);
+// });
+
+// emitter.on("order-pizza", (size) => {
+//   if (size === "large") {
+//     console.log("Serving complimentary drink");
+//   }
+// });
+
+// emitter.emit("order-pizza", "large", "mushroom");
