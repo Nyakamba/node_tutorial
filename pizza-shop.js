@@ -11,3 +11,5 @@ class PizzaShop {
     console.log(`Current order number ${this.orderNumber}`);
   }
 }
+
+module.exports = PizzaShop;
