@@ -2,7 +2,11 @@ const PizzaShop = require("./pizza-shop");
 
 const pizzaShop = new PizzaShop();
 
-pizzaShop.order();
+pizzaShop.on("order", (size, topping) => {
+  console.log(`Order received! Baking a ${size} pizza with ${topping}`);
+});
+
+pizzaShop.order("large", "mushrooms");
 pizzaShop.displayOrderNumber();
 
 // const EventEmitter = require("node:events");
