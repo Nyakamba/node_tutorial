@@ -1,7 +1,7 @@
 class DrinkMachine {
   serveDrink(size) {
     if (size === "large") {
-      console.log("Serving a complimentary drink");
+      console.log("Serving the complimentary drink");
     }
   }
 }
