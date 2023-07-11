@@ -19,7 +19,7 @@ console.log("Third");
 
 fs.writeFileSync("./greet.txt", "Hello world");
 
-fs.writeFile("./greet.txt", "Hello Vishwas", (err) => {
+fs.writeFile("./greet.txt", " Hello Vishwas", { flag: "a" }, (err) => {
   if (err) {
     console.log(err);
   } else {
