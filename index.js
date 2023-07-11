@@ -1,12 +1,21 @@
 const fs = require("node:fs/promises");
 
-console.log("First");
+async function readFile() {
+  try {
+    const data = await fs.readFile("file.txt", "utf-8");
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
+}
 
-fs.readFile("file.txt", "utf-8")
-  .then((data) => console.log(data))
-  .catch((error) => console.log(error));
+// console.log("First");
 
-console.log("Second");
+// fs.readFile("file.txt", "utf-8")
+//   .then((data) => console.log(data))
+//   .catch((error) => console.log(error));
+
+// console.log("Second");
 
 //const { error } = require("node:console");
 // const fs = require("node:fs");
