@@ -9,6 +9,8 @@ async function readFile() {
   }
 }
 
+readFile();
+
 // console.log("First");
 
 // fs.readFile("file.txt", "utf-8")
