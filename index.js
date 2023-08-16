@@ -3,7 +3,7 @@ const https = require("node:https");
 
 // process.env.UV_THREADPOOL_SIZE = 16;
 
-const MAX_CALLS = 16;
+const MAX_CALLS = 12;
 
 const start = Date.now();
 
